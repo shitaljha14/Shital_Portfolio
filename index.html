@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/IMG_20240111_011902_prev_ui.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars " onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Crafting Code, Creating Impact</p>
+                <h1>Hi, I'm <span>Shital</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Screenshot_20230812_024908 (1).jpg" alt="My Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I am currently a B.Tech student majoring in Metallurgical and Materials Engineering at NIT Jamshedpur. While my academic
+                    background is grounded in engineering, I have developed a strong interest in web development, where I enjoy the balance
+                    between creativity and technical problem-solving.</p>
+                    <p>My expertise spans HTML, CSS, and JavaScript, which allow me to build interactive, user-friendly websites with
+                    responsive designs. I focus on creating web applications that are not only functional but also aesthetically pleasing.</p>
+                    <p>Driven by my passion for learning and technology, I constantly seek new opportunities to expand my knowledge in web
+                    development and software engineering. I’m eager to take on challenges that involve both innovation and precision,
+                    whether it’s creating a robust web application or solving complex engineering problems.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages:</span> Java, C++, C, Python, JavaScript, HTML, CSS</li>
+                            <li><span>Databases:</span> MySQL, MongoDB</li>
+                            <li><span>Frameworks & Tools:</span> ReactJS, NodeJS, Google Cloud, AWS</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web Head</span> - Unnat Bharat Abhiyan</li>
+                            <li><span>Core Member</span> - Google Developer Student Club</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech in Metallurgical and Materials Engineering</span> - NIT Jamshedpur</li>
+                            <li><span>Intermediate:</span> R. Mitra +2 High School, Jharkhand Board</li>
+                            <li><span>Matriculation:</span> S.K.P Vidya Vihar, CBSE</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Development</h2>
+                    <p>Designing responsive websites and web applications using modern technologies like ReactJS,
+                        NodeJS, and MongoDB.</p>
+                </div>
+                <div>
+                    <h2>Cloud Integration</h2>
+                    <p>Implementing scalable solutions with Google Cloud and AWS.</p>
+                </div>
+                <div>
+                    <h2>Machine Learning</h2>
+                    <p>Building machine learning models using Scikit Learn, Pandas, and NumPy.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/gdsc_website.png" alt="GDSC Official Website">
+                    <h3 class="p-title">GDSC Official Website</h3>
+                    <div class="layer">
+                        <h3>GDSC Official Website</h3>
+                        <p>Official website of Google Developer Student Club NIT Jamshedpur Chapter.</p>
+                        <a href="https://gds-cnitjsr-officalweb-nyoy.vercel.app/" target="_blank">View Project</a>
+                        <a href="https://github.com/ShishuSidharth/GDSCnitjsr_officalweb" target="_blank">Source
+                            Code</a>
+                    </div>
+                </div>
+
+                <!-- KrishiConnect Project -->
+                <div class="work">
+                    <img src="images/krishiconnect.png" alt="KrishiConnect">
+                    <h3 class="p-title">KrishiConnect</h3>
+                    <div class="layer">
+                        <h3>KrishiConnect</h3>
+                        <p>Helping farmers target the elite market through enhanced crop selling.</p>
+                        <a href="https://shishusidharth.github.io/krishiConnectGFG/home.html" target="_blank">View
+                            Project</a>
+                        <a href="https://github.com/ShishuSidharth/krishiConnectGFG" target="_blank">Source Code</a>
+                    </div>
+                </div>
+                
+                <!-- File Sharing App Project -->
+                <div class="work">
+                    <img src="images/file_sharing_app.png" alt="File Sharing App">
+                    <h3 class="p-title">File Sharing App</h3>
+                    <div class="layer">
+                        <h3>File Sharing App</h3>
+                        <p>An app that allows seamless file sharing across devices with link generation.</p>
+                        <a href="https://file-sharing-app-psi.vercel.app/" target="_blank">View Project</a>
+                        <a href="https://github.com/shitaljha14/FileSharingApp" target="_blank">Source Code</a>
+                    </div>
+                </div>
+                
+                </div>
+                <a href="#" class="btn">See more</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> shitaljha2312@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +919570001919</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" placeholder="Enter your phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" rows="6" placeholder="Enter your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Follow me on:</p>
+        <a href="https://github.com/shitaljha14" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
+        <a href="https://www.linkedin.com/in/shital-kumari-98b91124b" target="_blank"><i
+                class="fa-brands fa-linkedin"></i> LinkedIn</a>
+    </footer>
+
+    <script>
+        function openmenu() {
+            document.getElementById("sidemenu").style.right = "0";
+        }
+
+        function closemenu() {
+            document.getElementById("sidemenu").style.right = "-200px";
+        }
+
+        function opentab(tabname) {
+            let tablinks = document.getElementsByClassName("tab-links");
+            let tabcontents = document.getElementsByClassName("tab-contents");
+
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+
+</html>
